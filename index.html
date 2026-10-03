@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="es" data-lang="es" data-view="short">
+<head>
+<meta charset="utf-8"><meta name="robots" content="noindex,nofollow,noarchive"><meta name="robots" content="noimageindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Angie Uesseler Cala</title>
+<meta name="description" content="Angie Uesseler Cala, M.A. Diseñadora industrial y de producto. Modelado 3D, visualización y prototipado.">
+<meta property="og:title" content="Angie Uesseler Cala, M.A.">
+<meta property="og:description" content="Diseñadora industrial y de producto · Modelado 3D, visualización y prototipado">
+<meta property="og:image" content="img/og.jpg">
+<meta name="theme-color" content="#FDFCF8">
+<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" href="img/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Jost:wght@300;400;500&display=swap">
+<style>
+/* Layout: tarjeta NFC de una columna. Vista corta por defecto; "Ver perfil completo" despliega el perfil. El retrato vive dentro de un arco. */
+:root{
+  --off:#FDFCF8; --ivory:#F3F0E9; --nude:#E3DBCC; --obs:#101010; --deep:#BFA98A; --acc:#B5643F;
+  --bg:var(--off); --surface:var(--ivory); --line:#DCD3C2; --fg:var(--obs); --muted:#6B6458; --accent:#9C5232;
+  --chip:var(--nude); --btn-bg:#B5643F; --btn-fg:#FDFCF8;
+  --display:"Instrument Serif","Times New Roman",Georgia,serif;
+  --body:"Jost","Futura","Century Gothic",system-ui,sans-serif;
+  color-scheme:light;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:300 16px/1.6 var(--body);padding-inline:20px;padding-block:0 48px}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:560px;margin-inline:auto}
+:root[data-lang="es"] [lang="en"], :root[data-lang="en"] [lang="es"]{display:none!important}
+:root[data-view="short"] .full{display:none!important}
+:root[data-view="full"] .only-short{display:none!important}
+
+.top{display:flex;align-items:center;justify-content:space-between;padding-block:18px}
+.mark{width:26px;height:26px;color:var(--fg)}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{font:500 11px/1 var(--body);letter-spacing:.12em;background:none;border:0;color:var(--muted);padding:7px 11px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+
+.hero{display:grid;justify-items:center;text-align:center;gap:16px;padding-block:6px 24px}
+.arch{width:min(62vw,230px);aspect-ratio:4/5;max-width:100%}
+.arch img{width:100%;height:100%;object-fit:cover;border-radius:999px 999px 6px 6px;background:var(--nude)}
+h1{font:400 clamp(2.5rem,11vw,3.4rem)/.95 var(--display);margin:6px 0 0;letter-spacing:-.01em;text-wrap:balance}
+h1 em{font-style:italic}
+.ma{font:italic 400 .5em var(--display);color:var(--muted)}
+.role{margin:0;font-size:.98rem;letter-spacing:.02em}
+.role .deg{display:block;font:italic 400 1.02rem/1.3 var(--display);color:var(--muted);margin-top:6px}
+.role small{display:block;color:var(--muted);font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;margin-top:8px}
+.lede{font-size:1rem;color:var(--fg);max-width:40ch;margin:4px auto 0;text-wrap:pretty}
+
+.actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding-block:4px 18px}
+.btn{display:flex;align-items:center;justify-content:center;gap:9px;min-height:50px;padding:0 14px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--fg);text-decoration:none;font:400 .93rem var(--body);cursor:pointer;transition:transform .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.primary{grid-column:1/-1;background:var(--btn-bg);color:var(--btn-fg);border-color:var(--btn-bg);font-weight:500}
+.contact{grid-column:1/-1;display:grid;gap:2px;text-align:center;font-size:.86rem;color:var(--muted);padding-top:6px}
+.contact span{user-select:all}
+
+.toggle{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;border-radius:999px;border:1px solid var(--fg);background:transparent;color:var(--fg);font:500 .8rem var(--body);letter-spacing:.2em;text-transform:uppercase;cursor:pointer;margin-block:4px 8px}
+.toggle svg{width:14px;height:14px}
+
+section{border-top:1px solid var(--line);padding-block:30px}
+.eyebrow{font:500 .7rem/1 var(--body);letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:0 0 16px}
+p{margin:0 0 12px;max-width:62ch}
+
+.studio{background:var(--nude);color:var(--obs);border:1px solid var(--line);border-radius:22px;padding:24px 22px;display:grid;gap:10px}
+.studio .eyebrow{color:var(--acc-t,#9C5232);margin:0}
+.studio h3{font:italic 400 1.9rem/1 var(--display);margin:0}
+.studio .when{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#6B6458}
+.studio p{color:#2B2724;margin:0}
+
+.proj{display:grid;gap:26px}
+.case{display:grid;grid-template-columns:38% 1fr;gap:16px;align-items:start}
+.case img{aspect-ratio:4/5;width:100%;object-fit:cover;border-radius:12px;background:var(--surface)}
+.case h3{font:italic 400 1.55rem/1 var(--display);margin:0 0 4px}
+.case .client{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+.case .rolelbl{font:500 .68rem var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:0 0 4px}
+.case p{font-size:.93rem;margin:0 0 8px}
+.badge{display:inline-block;font-size:.72rem;letter-spacing:.06em;background:var(--chip);border-radius:999px;padding:4px 10px;margin-top:2px}
+.case .num{font:400 1.1rem/1 var(--display);color:var(--accent);margin:0 0 4px}
+.pdfs{display:grid;margin-top:26px}
+.case p.client{margin-bottom:10px}
+@media (max-width:420px){.case{grid-template-columns:1fr}.case img{aspect-ratio:16/10}}
+
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:5.6rem 1fr;gap:14px;padding-block:13px;border-bottom:1px solid var(--line)}
+.tl li:last-child{border-bottom:0}
+.tl time{font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:3px;line-height:1.4}
+.tl strong{font-weight:500;display:block}
+.tl em{font-style:normal;color:var(--accent);font-size:.9rem;display:block}
+.tl p{font-size:.9rem;color:var(--muted);margin:4px 0 0}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:0;list-style:none}
+.chips li{background:var(--chip);border-radius:999px;padding:6px 13px;font-size:.86rem}
+.sub{font:500 .74rem var(--body);letter-spacing:.16em;text-transform:uppercase;margin:4px 0 10px}
+.langs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.langs div{border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+.langs b{display:block;font:italic 400 1.5rem/1 var(--display)}
+.langs span{font-size:.82rem;color:var(--muted)}
+
+footer{border-top:1px solid var(--line);padding-top:26px;display:grid;justify-items:center;gap:10px;text-align:center;color:var(--muted);font-size:.8rem}
+footer .mark{width:30px;height:30px}
+@media (prefers-reduced-motion:no-preference){
+  .full{animation:fade .45s ease both}
+  @keyframes fade{from{transform:translateY(6px)}to{transform:none}}
+}
+img{-webkit-user-drag:none;-webkit-touch-callout:none;user-select:none;pointer-events:none}
+@media print{body{display:none}}
+#intro{position:fixed;inset:0;z-index:99;background:#F3F0E9;display:flex;align-items:center;justify-content:center;transition:opacity .6s ease}
+#intro.out{opacity:0;pointer-events:none}
+.in-wrap{display:grid;justify-items:center;gap:14px;text-align:center}
+.in-a{width:84px;height:84px;overflow:visible}
+.in-c{fill:#B5643F;animation:inC 1s cubic-bezier(.2,.7,.2,1) both}
+.in-u{fill:#101010;animation:inU 1s cubic-bezier(.2,.7,.2,1) both}
+@keyframes inC{from{transform:translate(-26px,-22px) rotate(-90deg);transform-origin:44px 50px;opacity:0}to{transform:none;opacity:1}}
+@keyframes inU{from{transform:translate(26px,22px) rotate(90deg);transform-origin:44px 50px;opacity:0}to{transform:none;opacity:1}}
+.in-n{font:400 30px/1 "Instrument Serif",Georgia,serif;color:#101010;opacity:0;animation:fadeU .7s .9s ease both}
+.in-r{font:400 10px/1 Jost,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#9C5232;opacity:0;animation:fadeU .7s 1.15s ease both}
+@keyframes fadeU{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.in-c,.in-u,.in-n,.in-r{animation:none;opacity:1}}
+</style>
+</head>
+<body>
+<div id="intro" aria-hidden="true"><div class="in-wrap"><svg class="in-a" viewBox="2 8 84 84"><path class="in-c" d="M13.227 75.555A40 40 0 0 1 62.800 14.693L62.800 38.574A22 22 0 1 0 26.623 63.493Z"/><path class="in-u" d="M15.369 77.933A40 40 0 0 0 66 83.407L66 90H84V10H66V50A22 22 0 0 1 28.765 65.871Z"/></svg><div class="in-n">Angie <i>Uesseler</i> Cala</div><div class="in-r">Industrial &amp; Product Designer</div></div></div>
+<script>(function(){var i=document.getElementById('intro');var seen=false;try{seen=sessionStorage.getItem('auc-intro')}catch(e){}
+if(seen||location.hash){i.remove();return}function go(){i.classList.add('out');setTimeout(function(){i.remove()},600);try{sessionStorage.setItem('auc-intro','1')}catch(e){}}
+i.addEventListener('click',go);setTimeout(go,2600)})();</script>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="isotipo" viewBox="2 8 84 84"><path d="M13.227 75.555A40 40 0 0 1 62.800 14.693L62.800 38.574A22 22 0 1 0 26.623 63.493Z" fill="currentColor"/><path d="M15.369 77.933A40 40 0 0 0 66 83.407L66 90H84V10H66V50A22 22 0 0 1 28.765 65.871Z" fill="currentColor"/></symbol>
+</svg>
+
+<div class="wrap">
+  <header class="top">
+    <svg class="mark" role="img" aria-label="Isotipo de Angie Uesseler Cala"><use href="#isotipo"/></svg>
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" id="b-es" data-set="es" aria-pressed="true">ES</button>
+      <button type="button" id="b-en" data-set="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="arch"><img src="img/angie.jpg" alt="Retrato de Angie Uesseler Cala" width="600" height="600"></div>
+    <h1>Angie <em>Uesseler</em> Cala</h1>
+    <p class="role">
+      <span lang="es">Diseñadora Industrial y de Producto Senior</span><span lang="en">Senior Industrial &amp; Product Designer</span>
+      <span class="deg"><span lang="es">M.A. Diseño de Producto<br>M.A. Modelado de Producto Digital</span><span lang="en">M.A. Product Design<br>M.A. Digital Product Modelling</span></span>
+      <small><span lang="es">Modelado 3D · Visualización · Prototipado</span><span lang="en">3D modelling · Visualisation · Prototyping</span></small>
+    </p>
+    <p class="lede" lang="es">Diseño productos desde la primera idea hasta su fabricación, con el mismo rigor en la técnica que en la estética.</p>
+    <p class="lede" lang="en">I take products from first sketch to production, with equal care for engineering and aesthetics.</p>
+  </div>
+
+  <nav class="actions" aria-label="Contacto">
+    <a class="btn primary" href="contacto.vcf" download="Angie-Uesseler-Cala.vcf">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+      <span lang="es">Guardar contacto</span><span lang="en">Save contact</span>
+    </a>
+    <a class="btn" href="https://wa.me/573208390714" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/><path d="M9 9.5c.3 2 2.5 4.2 4.5 4.5l1-1.2 2 .8c-.2 1-1 1.6-2 1.6-3 0-6.2-3.2-6.2-6.2 0-1 .6-1.8 1.6-2l.8 2z"/></svg>
+      WhatsApp CO
+    </a>
+    <a class="btn" href="https://wa.me/393482640767" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/><path d="M9 9.5c.3 2 2.5 4.2 4.5 4.5l1-1.2 2 .8c-.2 1-1 1.6-2 1.6-3 0-6.2-3.2-6.2-6.2 0-1 .6-1.8 1.6-2l.8 2z"/></svg>
+      WhatsApp IT
+    </a>
+    <a class="btn" href="mailto:angie.uc.di@gmail.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+      Email
+    </a>
+    <a class="btn" href="https://www.linkedin.com/in/angie-uesseler-cala" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 10.5V16M8 7.8v.1M11.5 16v-5.5M11.5 13c0-1.6 1-2.6 2.3-2.6 1.4 0 2.2.9 2.2 2.6V16" stroke-linecap="round"/></svg>
+      LinkedIn
+    </a>
+    <a class="btn" style="grid-column:1/-1" href="https://www.instagram.com/angieuesseler.id/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>
+      Instagram
+    </a>
+    <div class="contact"><span>+57 320 839 0714 · Colombia</span><span>+39 348 264 0767 · Italia</span><span>angie.uc.di@gmail.com</span></div>
+  </nav>
+
+  <button class="toggle only-short" type="button" data-view="full">
+    <span lang="es">Ver perfil completo</span><span lang="en">View full profile</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+  </button>
+
+  <div class="full">
+  <section aria-labelledby="h-perfil">
+    <p class="eyebrow" id="h-perfil"><span lang="es">Perfil</span><span lang="en">Profile</span></p>
+    <p lang="es">Diseñadora industrial y de producto con más de ocho años de trayectoria entre Colombia, Italia y clientes internacionales. Con maestrías de la Scuola Politecnica di Design de Milán y de ESDesign Barcelona, trabajé como diseñadora senior en Studio Fuksas, en Roma, en proyectos de producto, mobiliario y arquitectura.</p>
+    <p lang="es">Mi especialidad es el desarrollo 3D. Exploro con agilidad múltiples alternativas, perfecciono la propuesta definitiva y la acompaño hasta el render, los planos técnicos y el prototipo. Conozco de primera mano la cerámica, el yeso, la silicona, la resina, el concreto y la impresión 3D, y diseño cada pieza pensando desde el inicio en cómo se va a fabricar.</p>
+    <p lang="en">Industrial and product designer with over eight years of experience in Colombia, Italy and with international clients. I hold master’s degrees from Scuola Politecnica di Design in Milan and ESDesign in Barcelona, and worked as a Senior Designer at Studio Fuksas in Rome across product, furniture and architecture projects.</p>
+    <p lang="en">I specialise in 3D development: I explore options quickly, refine the strongest one and see it through to renders, technical drawings and prototypes. Hands-on experience with ceramics, plaster, silicone, resin, concrete and 3D printing means I design every piece with manufacturing in mind from the outset.</p>
+  </section>
+
+  <section aria-labelledby="h-studio">
+    <div class="studio">
+      <p class="eyebrow" id="h-studio"><span lang="es">Estudio propio</span><span lang="en">My studio</span></p>
+      <h3>Zhezu Studio 3D</h3>
+      <div class="when"><span lang="es">Fundadora · 2024 – hoy</span><span lang="en">Founder · 2024 – present</span></div>
+      <p lang="es">Estudio de diseño y fabricación digital. Modelado 3D de precisión, repuestos a medida e impresión 3D bajo pedido en FDM y resina.</p>
+      <p lang="en">A design and digital fabrication studio offering precision 3D modelling, custom replacement parts and on-demand FDM and resin 3D printing.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-exp">
+    <p class="eyebrow" id="h-exp"><span lang="es">Experiencia</span><span lang="en">Experience</span></p>
+    <ol class="tl">
+      <li><time>2024 – <span lang="es">hoy</span><span lang="en">present</span></time><div><strong>Zhezu Studio 3D</strong><em lang="es">Fundadora y directora de diseño · Bogotá</em><em lang="en">Founder &amp; Design Director · Bogotá</em><p lang="es">Dirección creativa y técnica del estudio: diseño de producto a medida, modelado 3D, prototipado e impresión 3D para toy art y mobiliario.</p><p lang="en">Creative and technical lead of the studio: bespoke product design, 3D modelling, prototyping and 3D printing for art toys and furniture.</p></div></li>
+      <li><time>2023 – 2026</time><div><strong>NAHÜAL</strong><em lang="es">Cofundadora · Product &amp; Project Design Manager · Países Bajos (remoto)</em><em lang="en">Co-founder · Product &amp; Project Design Manager · Netherlands (remote)</em><p lang="es">Dirección integral de proyectos de producto, mobiliario y cerámica, con equipos en distintas zonas horarias.</p><p lang="en">End-to-end management of product, furniture and ceramics projects, with teams across multiple time zones.</p></div></li>
+      <li><time>2021 – 2022</time><div><strong>Studio Fuksas</strong><em lang="es">Senior Industrial &amp; Product Designer · Roma</em><em lang="en">Senior Industrial &amp; Product Designer · Rome</em><p lang="es">En 2022, responsable del desarrollo digital del área de diseño: modelado 3D, visualización y planos para producto, mobiliario y arquitectura. Dos proyectos presentados en la Milan Design Week 2022, uno de ellos premiado, y participación en el concurso NEOM (Arabia Saudita).</p><p lang="en">In 2022, led the digital development of the design department: 3D modelling, visualisation and drawings for product, furniture and architecture. Two projects exhibited at Milan Design Week 2022, one of them award-winning, and a contribution to the NEOM competition (Saudi Arabia).</p></div></li>
+      <li><time>2021</time><div><strong>Dowan Ceramics</strong><em lang="es">Global Designer Program · Estados Unidos</em><em lang="en">Global Designer Program · United States</em><p lang="es">Concepto para una línea de vajilla diseñada en torno a porciones equilibradas.</p><p lang="en">Concept for a tableware line built around balanced portion sizes.</p></div></li>
+      <li><time>2020</time><div><strong>Studio Marco Merendi</strong><em lang="es">Diseñadora industrial · Milán</em><em lang="en">Industrial Designer · Milan</em><p lang="es">Mesas, accesorios y divisores en concreto para Gypsum y Colorskin, y participación en la cocina Libera para Elmar.</p><p lang="en">Concrete tables, accessories and room dividers for Gypsum and Colorskin, and a contribution to the Libera outdoor kitchen for Elmar.</p></div></li>
+      <li><time>2019</time><div><strong>Naps Snacks · The Gummy Box</strong><em lang="es">Artista y modeladora 3D · Colombia</em><em lang="en">3D Artist &amp; Modeller · Colombia</em><p lang="es">Modelado 3D e impresión de moldes para termoformado en el lanzamiento de nuevas líneas de confitería.</p><p lang="en">3D modelling and 3D-printed thermoforming moulds for the launch of new confectionery lines.</p></div></li>
+      <li><time>2018 – 2024</time><div><strong>Freelance</strong><em lang="es">Diseño de producto, visualización y prototipado · Remoto</em><em lang="en">Product design, visualisation and prototyping · Remote</em><p lang="es">Proyectos para clientes internacionales, entre ellos el desarrollo de producto para una marca australiana de bebidas en lata. Esta experiencia dio origen a Zhezu Studio 3D.</p><p lang="en">Projects for international clients, including product development for an Australian canned-beverage brand. This work laid the groundwork for Zhezu Studio 3D.</p></div></li>
+      <li><time>2017 – 2018</time><div><strong>Cultivos Casablanca</strong><em lang="es">Diseñadora industrial · Colombia</em><em lang="en">Industrial Designer · Colombia</em><p lang="es">Herramientas de corte y soluciones ergonómicas para operarios del sector floricultor, y empaques para poscosecha.</p><p lang="en">Cutting tools and ergonomic solutions for floriculture workers, plus post-harvest packaging.</p></div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-rec">
+    <p class="eyebrow" id="h-rec"><span lang="es">Reconocimientos</span><span lang="en">Recognition</span></p>
+    <ol class="tl">
+      <li><time>2022</time><div><strong>Archiproducts Design Awards</strong><em lang="es">Otto · Categoría Sostenibilidad</em><em lang="en">Otto · Sustainability category</em></div></li>
+      <li><time>2021</time><div><strong>Isola Design Awards</strong><em lang="es">Diaframma Lamp 1.6 · Smart Living &amp; Mobility</em><em lang="en">Diaframma Lamp 1.6 · Smart Living &amp; Mobility</em><p lang="es">Proyecto destacado con una entrevista en La Casa in Ordine.</p><p lang="en">Featured in an interview with La Casa in Ordine.</p></div></li>
+      <li><time>2017 – 2018</time><div><strong>Universidad Jorge Tadeo Lozano</strong><em lang="es">Beca de excelencia al mejor promedio · Tesis meritoria</em><em lang="en">Academic Excellence Scholarship (highest GPA) · Thesis with distinction</em></div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-edu">
+    <p class="eyebrow" id="h-edu"><span lang="es">Formación</span><span lang="en">Education</span></p>
+    <ol class="tl">
+      <li><time>2019 – 2020</time><div><strong lang="es">Máster en Diseño Industrial y de Producto</strong><strong lang="en">Master's in Industrial &amp; Product Design</strong><em>Scuola Politecnica di Design (SPD) · <span lang="es">Milán</span><span lang="en">Milan</span></em></div></li>
+      <li><time>2018 – 2020</time><div><strong lang="es">Máster en Modelado de Producto Digital</strong><strong lang="en">Master's in Digital Product Modelling</strong><em>ESDesign · Barcelona</em></div></li>
+      <li><time>2014 – 2018</time><div><strong lang="es">Diseño Industrial, grado con honores</strong><strong lang="en">Bachelor’s in Industrial Design, with honours</strong><em>Universidad Jorge Tadeo Lozano · Bogotá</em></div></li>
+      <li><time>2021 – 2023</time><div><strong lang="es">Formación complementaria</strong><strong lang="en">Additional training</strong><p lang="es">Modelado de producto 3D (Naska Digital Studio) · Diseño UX/UI (Coderhouse) · Bioimpresión 3D en salud (Universidad de los Andes) · IA para diseño industrial (AIDIA)</p><p lang="en">3D product modelling (Naska Digital Studio) · UX/UI design (Coderhouse) · 3D bioprinting in healthcare (Universidad de los Andes) · AI for industrial design (AIDIA)</p></div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="h-tools">
+    <p class="eyebrow" id="h-tools"><span lang="es">Herramientas</span><span lang="en">Toolkit</span></p>
+    <p class="sub">3D &amp; render</p>
+    <ul class="chips"><li>Rhinoceros</li><li>SolidWorks</li><li>Fusion 360</li><li>KeyShot</li><li>V-Ray</li><li>3ds Max</li><li>Blender</li></ul>
+    <p class="sub"><span lang="es">Taller y fabricación</span><span lang="en">Workshop &amp; fabrication</span></p>
+    <ul class="chips"><li lang="es">Impresión 3D FDM y resina</li><li lang="en">FDM &amp; resin 3D printing</li><li lang="es">Moldes de yeso y silicona</li><li lang="en">Plaster &amp; silicone moulds</li><li lang="es">Cerámica</li><li lang="en">Ceramics</li><li lang="es">Concreto</li><li lang="en">Concrete</li></ul>
+    <p class="sub"><span lang="es">Idiomas</span><span lang="en">Languages</span></p>
+    <div class="langs">
+      <div><b lang="es">Español</b><b lang="en">Spanish</b><span lang="es">Nativo</span><span lang="en">Native</span></div>
+      <div><b lang="es">Inglés</b><b lang="en">English</b><span>C1</span></div>
+      <div><b lang="es">Italiano</b><b lang="en">Italian</b><span>C1</span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-proy">
+    <p class="eyebrow" id="h-proy"><span lang="es">Portafolio · proyectos seleccionados</span><span lang="en">Portfolio · selected projects</span></p>
+    <div class="proj">
+      <article class="case">
+        <img src="img/p-wave.jpg" alt="Wave" loading="lazy">
+        <div>
+          <p class="num">01</p>
+          <h3>Wave</h3>
+          <p class="client">antoniolupi · Studio Fuksas · 2022</p>
+          <p lang="es">El primer lavabo de Studio Fuksas para antoniolupi. Dos láminas de mármol que se curvan como el agua y no llegan a cerrarse: ese desfase se convierte en el toallero.</p>
+          <p lang="en">Studio Fuksas’ first washbasin for antoniolupi: two marble sheets that curve like water and stop just short of meeting, leaving a gap that doubles as a towel rail.</p>
+          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span></p>
+          <p lang="es">Lideré el desarrollo 3D del lavabo: exploré y depuré sus variaciones hasta definir la forma final, y elaboré los renders y los planos técnicos. La propuesta fue aprobada por el project manager y la dirección del estudio.</p>
+          <p lang="en">I led the 3D development of the basin, exploring and refining iterations through to the final form, and produced the renders and technical drawings. The design was signed off by the project manager and the studio’s leadership.</p>
+          <span class="badge"><span lang="es">Milan Design Week 2022 · en el mercado</span><span lang="en">Milan Design Week 2022 · on the market</span></span>
+        </div>
+      </article>
+      <article class="case">
+        <img src="img/p-trieste.jpg" alt="Teleférico de Trieste" loading="lazy">
+        <div>
+          <p class="num">02</p>
+          <h3><span lang="es">Teleférico de Trieste</span><span lang="en">Trieste Cable Car</span></h3>
+          <p class="client"><span lang="es">Studio Fuksas · Provincia de Trieste · 2022</span><span lang="en">Studio Fuksas · Province of Trieste · 2022</span></p>
+          <p lang="es">Las estaciones del nuevo teleférico de Trieste, en el puerto de Porto Vecchio. La forma nace de la memoria industrial y marítima del lugar: grúas portuarias, soportes de funicular y antiguos almacenes.</p>
+          <p lang="en">Stations for Trieste’s new cable car in the Porto Vecchio harbour. The design draws on the site’s industrial and maritime heritage: harbour cranes, funicular supports and historic warehouses.</p>
+          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span></p>
+          <p lang="es">Por encargo directo de la dirección del estudio, lideré el desarrollo digital de dos estaciones junto al project manager, en un proyecto concebido originalmente para el equipo de arquitectura. Modelado 3D, exploración de alternativas, renders, paisajismo, animaciones, video y postproducción.</p>
+          <p lang="en">Appointed directly by the studio’s leadership, I led the digital development of two stations with the project manager, on a brief originally assigned to the architecture team. Scope: 3D modelling, design studies, renders, landscaping, animation, video and post-production.</p>
+          <span class="badge"><span lang="es">En construcción</span><span lang="en">Under construction</span></span>
+        </div>
+      </article>
+      <article class="case">
+        <img src="img/p-otto.jpg" alt="Otto" loading="lazy">
+        <div>
+          <p class="num">03</p>
+          <h3>Otto</h3>
+          <p class="client">Altreforme · Studio Fuksas · 2022</p>
+          <p lang="es">El primer producto de Altreforme hecho por completo con economía circular: láminas de aluminio que ya no servían a la industria automotriz y aquí encuentran una segunda vida.</p>
+          <p lang="en">Altreforme’s first product designed entirely around circular-economy principles, giving a second life to aluminium sheets no longer suitable for automotive use.</p>
+          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span></p>
+          <p lang="es">Diseño del separador y de sus patrones de perforación, concebidos para láminas de aluminio recuperadas de la industria automotriz.</p>
+          <p lang="en">Design of the divider and its perforation patterns, developed for aluminium sheets reclaimed from the automotive industry.</p>
+          <span class="badge"><span lang="es">Archiproducts Design Awards 2022 · Sostenibilidad</span><span lang="en">Archiproducts Design Awards 2022 · Sustainability</span></span>
+        </div>
+      </article>
+      <article class="case">
+        <img src="img/p-dia.jpg" alt="Diaframma Lamp 1.6" loading="lazy">
+        <div>
+          <p class="num">04</p>
+          <h3>Diaframma Lamp 1.6</h3>
+          <p class="client"><span lang="es">Scuola Politecnica di Design · Milán · 2020</span><span lang="en">Scuola Politecnica di Design · Milan · 2020</span></p>
+          <p lang="es">Una lámpara que funciona como el diafragma de una cámara: seis aspas que se abren y se cierran al girar, para pasar de una luz directa para leer a una luz difusa para el cuarto.</p>
+          <p lang="en">A lamp that works like a camera aperture: six blades open and close with a twist of the head, moving from a focused reading light to a soft ambient glow.</p>
+          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span></p>
+          <p lang="es">El concepto nació en un equipo de tres. A partir de ahí asumí el desarrollo completo: modelo 3D, prototipo funcional, renders y presentación final.</p>
+          <p lang="en">The concept was developed in a team of three; I then led the full development: 3D model, working prototype, renders and final presentation.</p>
+          <span class="badge"><span lang="es">Ganadora · Isola Design Awards 2021</span><span lang="en">Winner · Isola Design Awards 2021</span></span>
+        </div>
+      </article>
+      <article class="case">
+        <img src="img/p-skate.jpg" alt="Inline Skate" loading="lazy">
+        <div>
+          <p class="num">05</p>
+          <h3>Inline Skate</h3>
+          <p class="client"><span lang="es">Proyecto de autor · Deporte y calzado</span><span lang="en">Personal project · Sport & footwear</span></p>
+          <p lang="es">Un patín de velocidad pensado para empujar con más energía y menos esfuerzo: bota baja para ganar precisión y un chasis ligero que absorbe la vibración.</p>
+          <p lang="en">A speed skate designed to deliver more power with less effort: a low-cut boot for precision and a lightweight chassis that dampens vibration.</p>
+          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span></p>
+          <p lang="es">Proyecto propio de principio a fin: investigación, bocetos, concepto, modelado 3D y visualización.</p>
+          <p lang="en">Self-initiated project, from research and sketching through concept, 3D modelling and visualisation.</p>
+          <span class="badge"><span lang="es">Concepto</span><span lang="en">Concept</span></span>
+        </div>
+      </article>
+      <article class="case">
+        <img src="img/p-ct.jpg" alt="CT-Set" loading="lazy">
+        <div>
+          <p class="num">06</p>
+          <h3>CT-Set</h3>
+          <p class="client"><span lang="es">Proyecto de autor · Cerámica · 2021</span><span lang="en">Personal project · Ceramics · 2021</span></p>
+          <p lang="es">Una taza y un plato en porcelana blanca para quienes disfrutan el café y el té. Todo gira alrededor del asa, pensada para las distintas formas de sostener una taza.</p>
+          <p lang="en">A white porcelain cup and saucer for coffee and tea lovers, designed around the handle and the different ways people hold a cup.</p>
+          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span></p>
+          <p lang="es">Desarrollo completo: diseño, prototipos impresos en 3D, moldes de yeso y producción de las piezas en porcelana.</p>
+          <p lang="en">End-to-end development: design, 3D-printed prototypes, plaster moulds and porcelain production.</p>
+          <span class="badge"><span lang="es">Producido</span><span lang="en">Produced</span></span>
+        </div>
+      </article>
+      <article class="case">
+        <img src="img/p-astro.jpg" alt="Astro Lamp" loading="lazy">
+        <div>
+          <p class="num">07</p>
+          <h3>Astro Lamp</h3>
+          <p class="client"><span lang="es">Proyecto de autor · Iluminación infantil</span><span lang="en">Personal project · Children’s lighting</span></p>
+          <p lang="es">Una lámpara para que los niños no olviden lo que sueñan ser. Un pequeño astronauta cuyo visor se enciende cada noche.</p>
+          <p lang="en">A night light that reminds children of what they dream of becoming: a small astronaut whose visor glows every night.</p>
+          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span></p>
+          <p lang="es">Proyecto propio: concepto, bocetos, identidad gráfica, modelado, prototipos impresos en 3D, renders y empaque.</p>
+          <p lang="en">Self-initiated project: concept, sketches, visual identity, 3D modelling, 3D-printed prototypes, renders and packaging.</p>
+          <span class="badge"><span lang="es">Prototipo funcional</span><span lang="en">Working prototype</span></span>
+        </div>
+      </article>
+      <article class="case">
+        <img src="img/p-yacht.jpg" alt="Yate" loading="lazy">
+        <div>
+          <p class="num">08</p>
+          <h3><span lang="es">Yate</span><span lang="en">Yacht</span></h3>
+          <p class="client"><span lang="es">Proyecto de autor · modelado y visualización · 2021</span><span lang="en">Personal project · modelling & visualisation · 2021</span></p>
+          <p lang="es">Un yate de recreo modelado de principio a fin: casco, cubiertas, interiores y su presentación en el agua.</p>
+          <p lang="en">A leisure yacht modelled end to end (hull, decks and interiors) and presented in context on the water.</p>
+          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span></p>
+          <p lang="es">Modelado de superficies, interiores, materiales, renders y dirección de arte.</p>
+          <p lang="en">Surface modelling, interiors, materials, renders and art direction.</p>
+          <span class="badge">Rhinoceros · KeyShot</span>
+        </div>
+      </article>
+    </div>
+    <div class="pdfs">
+      <a class="btn primary" href="portafolio.html" lang="es"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Ver portafolio completo</a>
+      <a class="btn primary" href="portafolio.html#en" lang="en"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>View full portfolio</a>
+    </div>
+  </section>
+
+  <button class="toggle" type="button" data-view="short">
+    <span lang="es">Versión corta</span><span lang="en">Short version</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 15l6-6 6 6"/></svg>
+  </button>
+  </div>
+
+  <footer>
+    <svg class="mark" role="img" aria-label="Isotipo de Angie Uesseler Cala"><use href="#isotipo"/></svg>
+    <div>Angie Uesseler Cala · Colombia · Italia</div>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  function setLang(l){
+    root.setAttribute('data-lang',l); root.setAttribute('lang',l);
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l));});
+    try{localStorage.setItem('auc-lang',l);}catch(e){}
+  }
+  function setView(v){
+    root.setAttribute('data-view',v);
+    if(v==='short'){window.scrollTo({top:0,behavior:'smooth'});}
+  }
+  var saved=null; try{saved=localStorage.getItem('auc-lang');}catch(e){}
+  var lang='es';
+  if(location.hash==='#en'||location.hash==='#es') lang=location.hash.slice(1); else if(saved) lang=saved;
+  setLang(lang);
+  setView(location.hash==='#perfil'?'full':'short');
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set);});});
+  document.querySelectorAll('.toggle').forEach(function(b){b.addEventListener('click',function(){setView(b.dataset.view);});});
+})();
+</script>
+<script>document.addEventListener('contextmenu',function(e){if(e.target.closest('img,.case,.arch'))e.preventDefault()});document.addEventListener('dragstart',function(e){if(e.target.tagName==='IMG')e.preventDefault()});document.addEventListener('keydown',function(e){if((e.ctrlKey||e.metaKey)&&/^[sp]$/i.test(e.key))e.preventDefault()});</script>
+</body>
+</html>

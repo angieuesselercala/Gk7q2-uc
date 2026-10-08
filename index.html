@@ -31,7 +31,7 @@ img{max-width:100%;display:block}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
 .wrap{max-width:560px;margin-inline:auto}
-:root[data-lang="es"] [lang="en"], :root[data-lang="en"] [lang="es"]{display:none!important}
+:root:not([data-lang="es"]) [lang="es"], :root:not([data-lang="en"]) [lang="en"], :root:not([data-lang="it"]) [lang="it"]{display:none!important}
 :root[data-view="short"] .full{display:none!important}
 :root[data-view="full"] .only-short{display:none!important}
 
@@ -163,6 +163,7 @@ i.addEventListener('click',go);setTimeout(go,2600)})();</script>
     <div class="lang" role="group" aria-label="Idioma / Language">
       <button type="button" id="b-es" data-set="es" aria-pressed="true">ES</button>
       <button type="button" id="b-en" data-set="en" aria-pressed="false">EN</button>
+      <button type="button" id="b-it" data-set="it" aria-pressed="false">IT</button>
     </div>
   </header>
 
@@ -170,18 +171,18 @@ i.addEventListener('click',go);setTimeout(go,2600)})();</script>
     <div class="arch"><img src="img/angie.jpg" alt="Retrato de Angie Uesseler Cala" width="600" height="600"></div>
     <h1>Angie <em>Uesseler</em> Cala</h1>
     <p class="role">
-      <span lang="es">Diseñadora Industrial y de Producto Senior</span><span lang="en">Senior Industrial &amp; Product Designer</span>
-      <span class="deg"><span lang="es">M.A. Diseño de Producto<br>M.A. Modelado de Producto Digital</span><span lang="en">M.A. Product Design<br>M.A. Digital Product Modelling</span></span>
-      <small><span lang="es">Modelado 3D · Visualización · Prototipado</span><span lang="en">3D modelling · Visualisation · Prototyping</span></small>
+      <span lang="es">Diseñadora Industrial y de Producto Senior</span><span lang="en">Senior Industrial &amp; Product Designer</span><span lang="it">Senior Industrial &amp; Product Designer</span>
+      <span class="deg"><span lang="es">M.A. Diseño de Producto<br>M.A. Modelado de Producto Digital</span><span lang="en">M.A. Product Design<br>M.A. Digital Product Modelling</span><span lang="it">M.A. Design del Prodotto<br>M.A. Modellazione Digitale del Prodotto</span></span>
+      <small><span lang="es">Modelado 3D · Visualización · Prototipado</span><span lang="en">3D modelling · Visualisation · Prototyping</span><span lang="it">Modellazione 3D · Visualizzazione · Prototipazione</span></small>
     </p>
     <p class="lede" lang="es">Diseño de producto del concepto a la fabricación, con el mismo rigor técnico y estético.</p>
-    <p class="lede" lang="en">Product design from concept to production, with equal rigour in engineering and aesthetics.</p>
+    <p class="lede" lang="en">Product design from concept to production, with equal rigour in engineering and aesthetics.</p><p class="lede" lang="it">Design del prodotto dal concept alla produzione, con lo stesso rigore tecnico ed estetico.</p>
   </div>
 
   <nav class="actions" aria-label="Contacto">
     <a class="btn primary" href="contacto.vcf" download="Angie-Uesseler-Cala.vcf">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
-      <span lang="es">Guardar contacto</span><span lang="en">Save contact</span>
+      <span lang="es">Guardar contacto</span><span lang="en">Save contact</span><span lang="it">Salva contatto</span>
     </a>
     <a class="btn" href="https://wa.me/573208390714" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/><path d="M9 9.5c.3 2 2.5 4.2 4.5 4.5l1-1.2 2 .8c-.2 1-1 1.6-2 1.6-3 0-6.2-3.2-6.2-6.2 0-1 .6-1.8 1.6-2l.8 2z"/></svg>
@@ -207,79 +208,79 @@ i.addEventListener('click',go);setTimeout(go,2600)})();</script>
   </nav>
 
   <button class="toggle only-short" type="button" data-view="full">
-    <span lang="es">Ver perfil completo</span><span lang="en">View full profile</span>
+    <span lang="es">Ver perfil completo</span><span lang="en">View full profile</span><span lang="it">Vedi profilo completo</span>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
   </button>
 
   <div class="full">
   <section aria-labelledby="h-perfil">
-    <p class="eyebrow" id="h-perfil"><span lang="es">Perfil</span><span lang="en">Profile</span></p>
+    <p class="eyebrow" id="h-perfil"><span lang="es">Perfil</span><span lang="en">Profile</span><span lang="it">Profilo</span></p>
     <p lang="es">Diseñadora industrial y de producto con más de ocho años de trayectoria en Colombia, Italia y con clientes internacionales. Maestrías en la Scuola Politecnica di Design de Milán y en ESDesign Barcelona; diseñadora senior en Studio Fuksas, Roma, en proyectos de producto, mobiliario y arquitectura.</p>
     <p lang="es">Especialización en desarrollo 3D: exploración de alternativas, depuración de la propuesta final y seguimiento hasta render, planos técnicos y prototipo. Experiencia práctica en cerámica, yeso, silicona, resina, concreto e impresión 3D, con criterios de fabricación desde la primera etapa del diseño.</p>
-    <p lang="en">Industrial and product designer with over eight years of experience in Colombia, Italy and with international clients. Master’s degrees from Scuola Politecnica di Design, Milan, and ESDesign, Barcelona; Senior Designer at Studio Fuksas, Rome, across product, furniture and architecture projects.</p>
-    <p lang="en">Specialised in 3D development: exploring alternatives, refining the final proposal and carrying it through to renders, technical drawings and prototypes. Hands-on experience with ceramics, plaster, silicone, resin, concrete and 3D printing, applying manufacturing criteria from the earliest design stage.</p>
+    <p lang="en">Industrial and product designer with over eight years of experience in Colombia, Italy and with international clients. Master’s degrees from Scuola Politecnica di Design, Milan, and ESDesign, Barcelona; Senior Designer at Studio Fuksas, Rome, across product, furniture and architecture projects.</p><p lang="it">Designer industriale e di prodotto con oltre otto anni di esperienza tra Colombia, Italia e clienti internazionali. Master alla Scuola Politecnica di Design di Milano e a ESDesign Barcellona; Senior Designer presso Studio Fuksas, Roma, su progetti di prodotto, arredo e architettura.</p>
+    <p lang="en">Specialised in 3D development: exploring alternatives, refining the final proposal and carrying it through to renders, technical drawings and prototypes. Hands-on experience with ceramics, plaster, silicone, resin, concrete and 3D printing, applying manufacturing criteria from the earliest design stage.</p><p lang="it">Specializzata nello sviluppo 3D: esplorazione delle alternative, affinamento della proposta finale e sviluppo fino a render, disegni tecnici e prototipo. Esperienza pratica con ceramica, gesso, silicone, resina, calcestruzzo e stampa 3D, con criteri di produzione applicati fin dalle prime fasi del progetto.</p>
   </section>
 
   <section aria-labelledby="h-studio">
     <div class="studio">
-      <p class="eyebrow" id="h-studio"><span lang="es">Estudio propio</span><span lang="en">My studio</span></p>
+      <p class="eyebrow" id="h-studio"><span lang="es">Estudio propio</span><span lang="en">My studio</span><span lang="it">Il mio studio</span></p>
       <h3>Zhezu Studio 3D</h3>
-      <div class="when"><span lang="es">Fundadora · 2024 – hoy</span><span lang="en">Founder · 2024 – present</span></div>
+      <div class="when"><span lang="es">Fundadora · 2024 – hoy</span><span lang="en">Founder · 2024 – present</span><span lang="it">Fondatrice · 2024 – oggi</span></div>
       <p lang="es">Estudio de diseño y fabricación digital. Modelado 3D de precisión, repuestos a medida e impresión 3D bajo pedido en FDM y resina.</p>
-      <p lang="en">A design and digital fabrication studio offering precision 3D modelling, custom replacement parts and on-demand FDM and resin 3D printing.</p>
-      <a class="zlink" href="https://zhezustudio3d.github.io/enlaces.html" target="_blank" rel="noopener"><span lang="es">Conocer Zhezu</span><span lang="en">Visit Zhezu</span> ↗</a>
+      <p lang="en">A design and digital fabrication studio offering precision 3D modelling, custom replacement parts and on-demand FDM and resin 3D printing.</p><p lang="it">Studio di design e fabbricazione digitale: modellazione 3D di precisione, ricambi su misura e stampa 3D su richiesta in FDM e resina.</p>
+      <a class="zlink" href="https://zhezustudio3d.github.io/enlaces.html" target="_blank" rel="noopener"><span lang="es">Conocer Zhezu</span><span lang="en">Visit Zhezu</span><span lang="it">Scopri Zhezu</span> ↗</a>
     </div>
   </section>
 
   <section aria-labelledby="h-exp">
-    <p class="eyebrow" id="h-exp"><span lang="es">Experiencia</span><span lang="en">Experience</span></p>
+    <p class="eyebrow" id="h-exp"><span lang="es">Experiencia</span><span lang="en">Experience</span><span lang="it">Esperienza</span></p>
     <ol class="tl">
-      <li><time>2024 – <span lang="es">hoy</span><span lang="en">present</span></time><div><strong>Zhezu Studio 3D</strong><em lang="es">Fundadora y directora de diseño · Bogotá</em><em lang="en">Founder &amp; Design Director · Bogotá</em><p lang="es">Dirección creativa y técnica del estudio: diseño de producto a medida, modelado 3D, prototipado e impresión 3D para toy art y mobiliario.</p><p lang="en">Creative and technical lead of the studio: bespoke product design, 3D modelling, prototyping and 3D printing for art toys and furniture.</p></div></li>
-      <li><time>2023 – 2026</time><div><strong>NAHÜAL</strong><em lang="es">Cofundadora · Product &amp; Project Design Manager · Países Bajos (remoto)</em><em lang="en">Co-founder · Product &amp; Project Design Manager · Netherlands (remote)</em><p lang="es">Dirección integral de proyectos de producto, mobiliario y cerámica, con equipos en distintas zonas horarias.</p><p lang="en">End-to-end management of product, furniture and ceramics projects, with teams across multiple time zones.</p></div></li>
-      <li><time>2021 – 2022</time><div><strong>Studio Fuksas</strong><em lang="es">Senior Industrial &amp; Product Designer · Roma</em><em lang="en">Senior Industrial &amp; Product Designer · Rome</em><p lang="es">En 2022, responsable del desarrollo digital del área de diseño: modelado 3D, visualización y planos para producto, mobiliario y arquitectura. Dos proyectos presentados en la Milan Design Week 2022, uno de ellos premiado, y participación en el concurso NEOM (Arabia Saudita).</p><p lang="en">In 2022, led the digital development of the design department: 3D modelling, visualisation and drawings for product, furniture and architecture. Two projects exhibited at Milan Design Week 2022, one of them award-winning, and a contribution to the NEOM competition (Saudi Arabia).</p></div></li>
-      <li><time>2021</time><div><strong>Dowan Ceramics</strong><em lang="es">Global Designer Program · Estados Unidos</em><em lang="en">Global Designer Program · United States</em><p lang="es">Concepto para una línea de vajilla diseñada en torno a porciones equilibradas.</p><p lang="en">Concept for a tableware line built around balanced portion sizes.</p></div></li>
-      <li><time>2020</time><div><strong>Studio Marco Merendi</strong><em lang="es">Diseñadora industrial · Milán</em><em lang="en">Industrial Designer · Milan</em><p lang="es">Mesas, accesorios y divisores en concreto para Gypsum y Colorskin, y participación en la cocina Libera para Elmar.</p><p lang="en">Concrete tables, accessories and room dividers for Gypsum and Colorskin, and a contribution to the Libera outdoor kitchen for Elmar.</p></div></li>
-      <li><time>2019</time><div><strong>Naps Snacks · The Gummy Box</strong><em lang="es">Artista y modeladora 3D · Colombia</em><em lang="en">3D Artist &amp; Modeller · Colombia</em><p lang="es">Modelado 3D e impresión de moldes para termoformado en el lanzamiento de nuevas líneas de confitería.</p><p lang="en">3D modelling and 3D-printed thermoforming moulds for the launch of new confectionery lines.</p></div></li>
-      <li><time>2018 – 2024</time><div><strong>Freelance</strong><em lang="es">Diseño de producto, visualización y prototipado · Remoto</em><em lang="en">Product design, visualisation and prototyping · Remote</em><p lang="es">Proyectos para clientes internacionales, entre ellos el desarrollo de producto para una marca australiana de bebidas en lata. Esta experiencia dio origen a Zhezu Studio 3D.</p><p lang="en">Projects for international clients, including product development for an Australian canned-beverage brand. This work laid the groundwork for Zhezu Studio 3D.</p></div></li>
-      <li><time>2017 – 2018</time><div><strong>Cultivos Casablanca</strong><em lang="es">Diseñadora industrial · Colombia</em><em lang="en">Industrial Designer · Colombia</em><p lang="es">Herramientas de corte y soluciones ergonómicas para operarios del sector floricultor, y empaques para poscosecha.</p><p lang="en">Cutting tools and ergonomic solutions for floriculture workers, plus post-harvest packaging.</p></div></li>
+      <li><time>2024 – <span lang="es">hoy</span><span lang="en">present</span><span lang="it">oggi</span></time><div><strong>Zhezu Studio 3D</strong><em lang="es">Fundadora y directora de diseño · Bogotá</em><em lang="en">Founder &amp; Design Director · Bogotá</em><em lang="it">Fondatrice e Design Director · Bogotá</em><p lang="es">Dirección creativa y técnica del estudio: diseño de producto a medida, modelado 3D, prototipado e impresión 3D para toy art y mobiliario.</p><p lang="en">Creative and technical lead of the studio: bespoke product design, 3D modelling, prototyping and 3D printing for art toys and furniture.</p><p lang="it">Direzione creativa e tecnica dello studio: design di prodotto su misura, modellazione 3D, prototipazione e stampa 3D per art toy e arredo.</p></div></li>
+      <li><time>2023 – 2026</time><div><strong>NAHÜAL</strong><em lang="es">Cofundadora · Product &amp; Project Design Manager · Países Bajos (remoto)</em><em lang="en">Co-founder · Product &amp; Project Design Manager · Netherlands (remote)</em><em lang="it">Co-fondatrice · Product &amp; Project Design Manager · Paesi Bassi (da remoto)</em><p lang="es">Dirección integral de proyectos de producto, mobiliario y cerámica, con equipos en distintas zonas horarias.</p><p lang="en">End-to-end management of product, furniture and ceramics projects, with teams across multiple time zones.</p><p lang="it">Gestione completa di progetti di prodotto, arredo e ceramica, con team distribuiti su più fusi orari.</p></div></li>
+      <li><time>2021 – 2022</time><div><strong>Studio Fuksas</strong><em lang="es">Senior Industrial &amp; Product Designer · Roma</em><em lang="en">Senior Industrial &amp; Product Designer · Rome</em><em lang="it">Senior Industrial &amp; Product Designer · Roma</em><p lang="es">En 2022, responsable del desarrollo digital del área de diseño: modelado 3D, visualización y planos para producto, mobiliario y arquitectura. Dos proyectos presentados en la Milan Design Week 2022, uno de ellos premiado, y participación en el concurso NEOM (Arabia Saudita).</p><p lang="en">In 2022, led the digital development of the design department: 3D modelling, visualisation and drawings for product, furniture and architecture. Two projects exhibited at Milan Design Week 2022, one of them award-winning, and a contribution to the NEOM competition (Saudi Arabia).</p><p lang="it">Nel 2022, responsabile dello sviluppo digitale dell’area design: modellazione 3D, visualizzazione e disegni per prodotto, arredo e architettura. Due progetti esposti alla Milan Design Week 2022, uno dei quali premiato, e un contributo al concorso NEOM (Arabia Saudita).</p></div></li>
+      <li><time>2021</time><div><strong>Dowan Ceramics</strong><em lang="es">Global Designer Program · Estados Unidos</em><em lang="en">Global Designer Program · United States</em><em lang="it">Global Designer Program · Stati Uniti</em><p lang="es">Concepto para una línea de vajilla diseñada en torno a porciones equilibradas.</p><p lang="en">Concept for a tableware line built around balanced portion sizes.</p><p lang="it">Concept per una linea di stoviglie progettata attorno a porzioni equilibrate.</p></div></li>
+      <li><time>2020</time><div><strong>Studio Marco Merendi</strong><em lang="es">Diseñadora industrial · Milán</em><em lang="en">Industrial Designer · Milan</em><em lang="it">Designer industriale · Milano</em><p lang="es">Mesas, accesorios y divisores en concreto para Gypsum y Colorskin, y participación en la cocina Libera para Elmar.</p><p lang="en">Concrete tables, accessories and room dividers for Gypsum and Colorskin, and a contribution to the Libera outdoor kitchen for Elmar.</p><p lang="it">Tavoli, accessori e divisori in calcestruzzo per Gypsum e Colorskin, e partecipazione alla cucina outdoor Libera per Elmar.</p></div></li>
+      <li><time>2019</time><div><strong>Naps Snacks · The Gummy Box</strong><em lang="es">Artista y modeladora 3D · Colombia</em><em lang="en">3D Artist &amp; Modeller · Colombia</em><em lang="it">3D Artist e modellatrice · Colombia</em><p lang="es">Modelado 3D e impresión de moldes para termoformado en el lanzamiento de nuevas líneas de confitería.</p><p lang="en">3D modelling and 3D-printed thermoforming moulds for the launch of new confectionery lines.</p><p lang="it">Modellazione 3D e stampa 3D di stampi per termoformatura per il lancio di nuove linee di dolciumi.</p></div></li>
+      <li><time>2018 – 2024</time><div><strong>Freelance</strong><em lang="es">Diseño de producto, visualización y prototipado · Remoto</em><em lang="en">Product design, visualisation and prototyping · Remote</em><em lang="it">Design di prodotto, visualizzazione e prototipazione · Da remoto</em><p lang="es">Proyectos para clientes internacionales, entre ellos el desarrollo de producto para una marca australiana de bebidas en lata. Esta experiencia dio origen a Zhezu Studio 3D.</p><p lang="en">Projects for international clients, including product development for an Australian canned-beverage brand. This work laid the groundwork for Zhezu Studio 3D.</p><p lang="it">Progetti per clienti internazionali, tra cui lo sviluppo di prodotto per un marchio australiano di bevande in lattina. Questo lavoro ha posto le basi di Zhezu Studio 3D.</p></div></li>
+      <li><time>2017 – 2018</time><div><strong>Cultivos Casablanca</strong><em lang="es">Diseñadora industrial · Colombia</em><em lang="en">Industrial Designer · Colombia</em><em lang="it">Designer industriale · Colombia</em><p lang="es">Herramientas de corte y soluciones ergonómicas para operarios del sector floricultor, y empaques para poscosecha.</p><p lang="en">Cutting tools and ergonomic solutions for floriculture workers, plus post-harvest packaging.</p><p lang="it">Utensili da taglio e soluzioni ergonomiche per gli operatori del settore floricolo, oltre a imballaggi post-raccolta.</p></div></li>
     </ol>
   </section>
 
   <section aria-labelledby="h-rec">
-    <p class="eyebrow" id="h-rec"><span lang="es">Reconocimientos</span><span lang="en">Recognition</span></p>
+    <p class="eyebrow" id="h-rec"><span lang="es">Reconocimientos</span><span lang="en">Recognition</span><span lang="it">Riconoscimenti</span></p>
     <ol class="tl">
-      <li><time>2022</time><div><strong>Archiproducts Design Awards</strong><em lang="es">Otto · Categoría Sostenibilidad</em><em lang="en">Otto · Sustainability category</em></div></li>
-      <li><time>2021</time><div><strong>Isola Design Awards</strong><em lang="es">Diaframma Lamp 1.6 · Smart Living &amp; Mobility</em><em lang="en">Diaframma Lamp 1.6 · Smart Living &amp; Mobility</em><p lang="es">Proyecto destacado con una entrevista en La Casa in Ordine.</p><p lang="en">Featured in an interview with La Casa in Ordine.</p></div></li>
-      <li><time>2017 – 2018</time><div><strong>Universidad Jorge Tadeo Lozano</strong><em lang="es">Beca de excelencia al mejor promedio · Tesis meritoria</em><em lang="en">Academic Excellence Scholarship (highest GPA) · Thesis with distinction</em></div></li>
+      <li><time>2022</time><div><strong>Archiproducts Design Awards</strong><em lang="es">Otto · Categoría Sostenibilidad</em><em lang="en">Otto · Sustainability category</em><em lang="it">Otto · Categoria Sostenibilità</em></div></li>
+      <li><time>2021</time><div><strong>Isola Design Awards</strong><em lang="es">Diaframma Lamp 1.6 · Smart Living &amp; Mobility</em><em lang="en">Diaframma Lamp 1.6 · Smart Living &amp; Mobility</em><em lang="it">Diaframma Lamp 1.6 · Smart Living &amp; Mobility</em><p lang="es">Proyecto destacado con una entrevista en La Casa in Ordine.</p><p lang="en">Featured in an interview with La Casa in Ordine.</p><p lang="it">Progetto presentato in un’intervista su La Casa in Ordine.</p></div></li>
+      <li><time>2017 – 2018</time><div><strong>Universidad Jorge Tadeo Lozano</strong><em lang="es">Beca de excelencia al mejor promedio · Tesis meritoria</em><em lang="en">Academic Excellence Scholarship (highest GPA) · Thesis with distinction</em><em lang="it">Borsa di studio per merito (media più alta) · Tesi con menzione</em></div></li>
     </ol>
   </section>
 
   <section aria-labelledby="h-edu">
-    <p class="eyebrow" id="h-edu"><span lang="es">Formación</span><span lang="en">Education</span></p>
+    <p class="eyebrow" id="h-edu"><span lang="es">Formación</span><span lang="en">Education</span><span lang="it">Formazione</span></p>
     <ol class="tl">
-      <li><time>2019 – 2020</time><div><strong lang="es">Máster en Diseño Industrial y de Producto</strong><strong lang="en">Master's in Industrial &amp; Product Design</strong><em>Scuola Politecnica di Design (SPD) · <span lang="es">Milán</span><span lang="en">Milan</span></em></div></li>
-      <li><time>2018 – 2020</time><div><strong lang="es">Máster en Modelado de Producto Digital</strong><strong lang="en">Master's in Digital Product Modelling</strong><em>ESDesign · Barcelona</em></div></li>
-      <li><time>2014 – 2018</time><div><strong lang="es">Diseño Industrial, grado con honores</strong><strong lang="en">Bachelor’s in Industrial Design, with honours</strong><em>Universidad Jorge Tadeo Lozano · Bogotá</em></div></li>
-      <li><time>2021 – 2023</time><div><strong lang="es">Formación complementaria</strong><strong lang="en">Additional training</strong><p lang="es">Modelado de producto 3D (Naska Digital Studio) · Diseño UX/UI (Coderhouse) · Bioimpresión 3D en salud (Universidad de los Andes) · IA para diseño industrial (AIDIA)</p><p lang="en">3D product modelling (Naska Digital Studio) · UX/UI design (Coderhouse) · 3D bioprinting in healthcare (Universidad de los Andes) · AI for industrial design (AIDIA)</p></div></li>
+      <li><time>2019 – 2020</time><div><strong lang="es">Máster en Diseño Industrial y de Producto</strong><strong lang="en">Master's in Industrial &amp; Product Design</strong><strong lang="it">Master in Design Industriale e di Prodotto</strong><em>Scuola Politecnica di Design (SPD) · <span lang="es">Milán</span><span lang="en">Milan</span><span lang="it">Milano</span></em></div></li>
+      <li><time>2018 – 2020</time><div><strong lang="es">Máster en Modelado de Producto Digital</strong><strong lang="en">Master's in Digital Product Modelling</strong><strong lang="it">Master in Modellazione Digitale del Prodotto</strong><em>ESDesign · Barcelona</em></div></li>
+      <li><time>2014 – 2018</time><div><strong lang="es">Diseño Industrial, grado con honores</strong><strong lang="en">Bachelor’s in Industrial Design, with honours</strong><strong lang="it">Laurea in Disegno Industriale, con lode</strong><em>Universidad Jorge Tadeo Lozano · Bogotá</em></div></li>
+      <li><time>2021 – 2023</time><div><strong lang="es">Formación complementaria</strong><strong lang="en">Additional training</strong><strong lang="it">Formazione complementare</strong><p lang="es">Modelado de producto 3D (Naska Digital Studio) · Diseño UX/UI (Coderhouse) · Bioimpresión 3D en salud (Universidad de los Andes) · IA para diseño industrial (AIDIA)</p><p lang="en">3D product modelling (Naska Digital Studio) · UX/UI design (Coderhouse) · 3D bioprinting in healthcare (Universidad de los Andes) · AI for industrial design (AIDIA)</p><p lang="it">Modellazione 3D di prodotto (Naska Digital Studio) · UX/UI design (Coderhouse) · Biostampa 3D in ambito sanitario (Universidad de los Andes) · IA per il design industriale (AIDIA)</p></div></li>
     </ol>
   </section>
 
   <section aria-labelledby="h-tools">
-    <p class="eyebrow" id="h-tools"><span lang="es">Herramientas</span><span lang="en">Toolkit</span></p>
+    <p class="eyebrow" id="h-tools"><span lang="es">Herramientas</span><span lang="en">Toolkit</span><span lang="it">Strumenti</span></p>
     <p class="sub">3D &amp; render</p>
     <ul class="chips"><li>Rhinoceros</li><li>SolidWorks</li><li>Fusion 360</li><li>KeyShot</li><li>V-Ray</li><li>3ds Max</li><li>Blender</li></ul>
-    <p class="sub"><span lang="es">Taller y fabricación</span><span lang="en">Workshop &amp; fabrication</span></p>
-    <ul class="chips"><li lang="es">Impresión 3D FDM y resina</li><li lang="en">FDM &amp; resin 3D printing</li><li lang="es">Moldes de yeso y silicona</li><li lang="en">Plaster &amp; silicone moulds</li><li lang="es">Cerámica</li><li lang="en">Ceramics</li><li lang="es">Concreto</li><li lang="en">Concrete</li></ul>
-    <p class="sub"><span lang="es">Idiomas</span><span lang="en">Languages</span></p>
+    <p class="sub"><span lang="es">Taller y fabricación</span><span lang="en">Workshop &amp; fabrication</span><span lang="it">Laboratorio e produzione</span></p>
+    <ul class="chips"><li lang="es">Impresión 3D FDM y resina</li><li lang="en">FDM &amp; resin 3D printing</li><li lang="it">Stampa 3D FDM e resina</li><li lang="es">Moldes de yeso y silicona</li><li lang="en">Plaster &amp; silicone moulds</li><li lang="it">Stampi in gesso e silicone</li><li lang="es">Cerámica</li><li lang="en">Ceramics</li><li lang="it">Ceramica</li><li lang="es">Concreto</li><li lang="en">Concrete</li><li lang="it">Calcestruzzo</li></ul>
+    <p class="sub"><span lang="es">Idiomas</span><span lang="en">Languages</span><span lang="it">Lingue</span></p>
     <div class="langs">
-      <div><b lang="es">Español</b><b lang="en">Spanish</b><span lang="es">Nativo</span><span lang="en">Native</span></div>
-      <div><b lang="es">Inglés</b><b lang="en">English</b><span>C1</span></div>
-      <div><b lang="es">Italiano</b><b lang="en">Italian</b><span>C1</span></div>
+      <div><b lang="es">Español</b><b lang="en">Spanish</b><b lang="it">Spagnolo</b><span lang="es">Nativo</span><span lang="en">Native</span><span lang="it">Madrelingua</span></div>
+      <div><b lang="es">Inglés</b><b lang="en">English</b><b lang="it">Inglese</b><span>C1</span></div>
+      <div><b lang="es">Italiano</b><b lang="en">Italian</b><b lang="it">Italiano</b><span>C1</span></div>
     </div>
   </section>
 
   <section aria-labelledby="h-proy">
-    <p class="eyebrow" id="h-proy"><span lang="es">Portafolio · proyectos seleccionados</span><span lang="en">Portfolio · selected projects</span></p>
+    <p class="eyebrow" id="h-proy"><span lang="es">Portafolio · proyectos seleccionados</span><span lang="en">Portfolio · selected projects</span><span lang="it">Portfolio · progetti selezionati</span></p>
     <div class="proj">
       <article class="case">
         <img src="img/p-wave.jpg" alt="Wave" loading="lazy">
@@ -288,25 +289,25 @@ i.addEventListener('click',go);setTimeout(go,2600)})();</script>
           <h3>Wave</h3>
           <p class="client">antoniolupi · Studio Fuksas · 2022</p>
           <p lang="es">Primer lavabo de Studio Fuksas para antoniolupi: dos láminas de mármol curvas cuyo desfase controlado integra el toallero.</p>
-          <p lang="en">Studio Fuksas’ first washbasin for antoniolupi: two curved marble sheets whose controlled offset integrates the towel rail.</p>
-          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span></p>
+          <p lang="en">Studio Fuksas’ first washbasin for antoniolupi: two curved marble sheets whose controlled offset integrates the towel rail.</p><p lang="it">Il primo lavabo di Studio Fuksas per antoniolupi: due lastre di marmo curve il cui sfalsamento controllato integra il portasciugamani.</p>
+          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span><span lang="it">Il mio ruolo</span></p>
           <p lang="es">Liderazgo del desarrollo 3D: variaciones de la curva hasta la forma final, renders y planos técnicos, con aprobación de la dirección del proyecto y del estudio.</p>
-          <p lang="en">Led the 3D development: curve iterations through to the final form, renders and technical drawings, approved by project and studio leadership.</p>
-          <span class="badge"><span lang="es">Milan Design Week 2022 · en el mercado</span><span lang="en">Milan Design Week 2022 · on the market</span></span>
+          <p lang="en">Led the 3D development: curve iterations through to the final form, renders and technical drawings, approved by project and studio leadership.</p><p lang="it">Guida dello sviluppo 3D: variazioni della curva fino alla forma finale, render e disegni tecnici, approvati dalla direzione di progetto e dello studio.</p>
+          <span class="badge"><span lang="es">Milan Design Week 2022 · en el mercado</span><span lang="en">Milan Design Week 2022 · on the market</span><span lang="it">Milan Design Week 2022 · in commercio</span></span>
         </div>
       </article>
       <article class="case">
         <img src="img/p-trieste.jpg" alt="Teleférico de Trieste" loading="lazy">
         <div>
           <p class="num">02</p>
-          <h3><span lang="es">Teleférico de Trieste</span><span lang="en">Trieste Cable Car</span></h3>
-          <p class="client"><span lang="es">Studio Fuksas · Provincia de Trieste · 2022</span><span lang="en">Studio Fuksas · Province of Trieste · 2022</span></p>
+          <h3><span lang="es">Teleférico de Trieste</span><span lang="en">Trieste Cable Car</span><span lang="it">Funivia di Trieste</span></h3>
+          <p class="client"><span lang="es">Studio Fuksas · Provincia de Trieste · 2022</span><span lang="en">Studio Fuksas · Province of Trieste · 2022</span><span lang="it">Studio Fuksas · Provincia di Trieste · 2022</span></p>
           <p lang="es">Estaciones del nuevo teleférico de Trieste en Porto Vecchio, con un lenguaje formal basado en el patrimonio industrial y marítimo del puerto.</p>
-          <p lang="en">Stations for Trieste’s new cable car in Porto Vecchio, with a formal language drawn from the harbour’s industrial and maritime heritage.</p>
-          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span></p>
+          <p lang="en">Stations for Trieste’s new cable car in Porto Vecchio, with a formal language drawn from the harbour’s industrial and maritime heritage.</p><p lang="it">Le stazioni della nuova funivia di Trieste a Porto Vecchio, con un linguaggio formale ispirato al patrimonio industriale e marittimo del porto.</p>
+          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span><span lang="it">Il mio ruolo</span></p>
           <p lang="es">Asignación directa de la dirección del estudio: desarrollo digital de dos estaciones junto al project manager, en un encargo previsto para el equipo de arquitectura. Modelado 3D, alternativas, renders, paisajismo, animaciones, video y posproducción.</p>
-          <p lang="en">Assigned directly by studio leadership: digital development of two stations with the project manager, on a brief originally scoped for the architecture team. 3D modelling, design studies, renders, landscaping, animation, video and post-production.</p>
-          <span class="badge"><span lang="es">En construcción</span><span lang="en">Under construction</span></span>
+          <p lang="en">Assigned directly by studio leadership: digital development of two stations with the project manager, on a brief originally scoped for the architecture team. 3D modelling, design studies, renders, landscaping, animation, video and post-production.</p><p lang="it">Incarico diretto della direzione dello studio: sviluppo digitale di due stazioni insieme al project manager, su un progetto originariamente previsto per il team di architettura. Modellazione 3D, alternative, render, paesaggio, animazioni, video e post-produzione.</p>
+          <span class="badge"><span lang="es">Proyecto presentado · 2022</span><span lang="en">Presented project · 2022</span><span lang="it">Progetto presentato · 2022</span></span>
         </div>
       </article>
       <article class="case">
@@ -316,11 +317,11 @@ i.addEventListener('click',go);setTimeout(go,2600)})();</script>
           <h3>Otto</h3>
           <p class="client">Altreforme · Studio Fuksas · 2022</p>
           <p lang="es">Primer producto de Altreforme desarrollado íntegramente bajo principios de economía circular, a partir de láminas de aluminio en desuso de la industria automotriz.</p>
-          <p lang="en">Altreforme’s first product developed entirely on circular-economy principles, using surplus aluminium sheets from the automotive industry.</p>
-          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span></p>
+          <p lang="en">Altreforme’s first product developed entirely on circular-economy principles, using surplus aluminium sheets from the automotive industry.</p><p lang="it">Il primo prodotto di Altreforme sviluppato interamente secondo i principi dell’economia circolare, a partire da lastre di alluminio inutilizzate dell’industria automobilistica.</p>
+          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span><span lang="it">Il mio ruolo</span></p>
           <p lang="es">Diseño del separador y de sus patrones de perforación para láminas de aluminio recuperadas.</p>
-          <p lang="en">Design of the divider and its perforation patterns, developed for aluminium sheets reclaimed from the automotive industry.</p>
-          <span class="badge"><span lang="es">Archiproducts Design Awards 2022 · Sostenibilidad</span><span lang="en">Archiproducts Design Awards 2022 · Sustainability</span></span>
+          <p lang="en">Design of the divider and its perforation patterns, developed for aluminium sheets reclaimed from the automotive industry.</p><p lang="it">Design del divisorio e dei suoi pattern di foratura, per lastre di alluminio recuperate dall’industria automobilistica.</p>
+          <span class="badge"><span lang="es">Archiproducts Design Awards 2022 · Sostenibilidad</span><span lang="en">Archiproducts Design Awards 2022 · Sustainability</span><span lang="it">Archiproducts Design Awards 2022 · Sostenibilità</span></span>
         </div>
       </article>
       <article class="case">
@@ -328,13 +329,13 @@ i.addEventListener('click',go);setTimeout(go,2600)})();</script>
         <div>
           <p class="num">04</p>
           <h3>Diaframma Lamp 1.6</h3>
-          <p class="client"><span lang="es">Scuola Politecnica di Design · Milán · 2020</span><span lang="en">Scuola Politecnica di Design · Milan · 2020</span></p>
+          <p class="client"><span lang="es">Scuola Politecnica di Design · Milán · 2020</span><span lang="en">Scuola Politecnica di Design · Milan · 2020</span><span lang="it">Scuola Politecnica di Design · Milano · 2020</span></p>
           <p lang="es">Lámpara de mesa de noche basada en el diafragma de una cámara: seis aspas regulan la luz, de directa para lectura a difusa ambiental.</p>
-          <p lang="en">A bedside lamp based on a camera aperture: six blades regulate the light, from focused reading light to diffused ambient light.</p>
-          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span></p>
+          <p lang="en">A bedside lamp based on a camera aperture: six blades regulate the light, from focused reading light to diffused ambient light.</p><p lang="it">Lampada da comodino ispirata al diaframma di una fotocamera: sei lamelle regolano la luce, da diretta per la lettura a diffusa d’ambiente.</p>
+          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span><span lang="it">Il mio ruolo</span></p>
           <p lang="es">Concepto desarrollado en equipo de tres; desarrollo completo a mi cargo: modelo 3D, prototipo funcional, renders y presentación final.</p>
-          <p lang="en">Concept developed in a team of three; full development led by me: 3D model, working prototype, renders and final presentation.</p>
-          <span class="badge"><span lang="es">Ganadora · Isola Design Awards 2021</span><span lang="en">Winner · Isola Design Awards 2021</span></span>
+          <p lang="en">Concept developed in a team of three; full development led by me: 3D model, working prototype, renders and final presentation.</p><p lang="it">Concept sviluppato in un team di tre; sviluppo completo a mio carico: modello 3D, prototipo funzionante, render e presentazione finale.</p>
+          <span class="badge"><span lang="es">Ganadora · Isola Design Awards 2021</span><span lang="en">Winner · Isola Design Awards 2021</span><span lang="it">Vincitrice · Isola Design Awards 2021</span></span>
         </div>
       </article>
       <article class="case">
@@ -342,13 +343,13 @@ i.addEventListener('click',go);setTimeout(go,2600)})();</script>
         <div>
           <p class="num">05</p>
           <h3>Inline Skate</h3>
-          <p class="client"><span lang="es">Proyecto de autor · Deporte y calzado</span><span lang="en">Personal project · Sport & footwear</span></p>
+          <p class="client"><span lang="es">Proyecto de autor · Deporte y calzado</span><span lang="en">Personal project · Sport & footwear</span><span lang="it">Progetto personale · Sport e calzature</span></p>
           <p lang="es">Patín de velocidad con bota de caña baja y chasis aligerado, diseñado para maximizar la transmisión de potencia con menor esfuerzo.</p>
-          <p lang="en">A speed skate with a low-cut boot and lightweight chassis, designed to maximise power transfer with less effort.</p>
-          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span></p>
+          <p lang="en">A speed skate with a low-cut boot and lightweight chassis, designed to maximise power transfer with less effort.</p><p lang="it">Pattino da velocità con scarpetta a taglio basso e telaio alleggerito, progettato per massimizzare la trasmissione di potenza con meno sforzo.</p>
+          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span><span lang="it">Il mio ruolo</span></p>
           <p lang="es">Proyecto de autor: investigación, bocetos, concepto, modelado 3D y visualización.</p>
-          <p lang="en">Self-initiated project, from research and sketching through concept, 3D modelling and visualisation.</p>
-          <span class="badge"><span lang="es">Concepto</span><span lang="en">Concept</span></span>
+          <p lang="en">Self-initiated project, from research and sketching through concept, 3D modelling and visualisation.</p><p lang="it">Progetto personale: ricerca, schizzi, concept, modellazione 3D e visualizzazione.</p>
+          <span class="badge"><span lang="es">Concepto</span><span lang="en">Concept</span><span lang="it">Concept</span></span>
         </div>
       </article>
       <article class="case">
@@ -356,13 +357,13 @@ i.addEventListener('click',go);setTimeout(go,2600)})();</script>
         <div>
           <p class="num">06</p>
           <h3>CT-Set</h3>
-          <p class="client"><span lang="es">Proyecto de autor · Cerámica · 2021</span><span lang="en">Personal project · Ceramics · 2021</span></p>
+          <p class="client"><span lang="es">Proyecto de autor · Cerámica · 2021</span><span lang="en">Personal project · Ceramics · 2021</span><span lang="it">Progetto personale · Ceramica · 2021</span></p>
           <p lang="es">Taza y plato en porcelana blanca para café y té, desarrollados en torno a un asa para tres tipos de agarre.</p>
-          <p lang="en">A white porcelain cup and saucer for coffee and tea, developed around a handle for three grip types.</p>
-          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span></p>
+          <p lang="en">A white porcelain cup and saucer for coffee and tea, developed around a handle for three grip types.</p><p lang="it">Tazza e piattino in porcellana bianca per caffè e tè, sviluppati attorno a un manico per tre tipi di presa.</p>
+          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span><span lang="it">Il mio ruolo</span></p>
           <p lang="es">Desarrollo integral: diseño, prototipos impresos en 3D, moldes de yeso y producción en porcelana.</p>
-          <p lang="en">End-to-end development: design, 3D-printed prototypes, plaster moulds and porcelain production.</p>
-          <span class="badge"><span lang="es">Producido</span><span lang="en">Produced</span></span>
+          <p lang="en">End-to-end development: design, 3D-printed prototypes, plaster moulds and porcelain production.</p><p lang="it">Sviluppo completo: design, prototipi stampati in 3D, stampi in gesso e produzione in porcellana.</p>
+          <span class="badge"><span lang="es">Producido</span><span lang="en">Produced</span><span lang="it">Prodotto</span></span>
         </div>
       </article>
       <article class="case">
@@ -370,24 +371,25 @@ i.addEventListener('click',go);setTimeout(go,2600)})();</script>
         <div>
           <p class="num">07</p>
           <h3>Astro Lamp</h3>
-          <p class="client"><span lang="es">Proyecto de autor · Iluminación infantil</span><span lang="en">Personal project · Children’s lighting</span></p>
+          <p class="client"><span lang="es">Proyecto de autor · Iluminación infantil</span><span lang="en">Personal project · Children’s lighting</span><span lang="it">Progetto personale · Illuminazione per bambini</span></p>
           <p lang="es">Lámpara infantil con forma de astronauta, cuyo visor se ilumina cada noche.</p>
-          <p lang="en">A children’s night light shaped like an astronaut, whose visor lights up every night.</p>
-          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span></p>
+          <p lang="en">A children’s night light shaped like an astronaut, whose visor lights up every night.</p><p lang="it">Lampada per bambini a forma di astronauta, il cui visore si illumina ogni notte.</p>
+          <p class="rolelbl"><span lang="es">Mi rol</span><span lang="en">My role</span><span lang="it">Il mio ruolo</span></p>
           <p lang="es">Proyecto de autor: concepto, bocetos, identidad gráfica, modelado, prototipos impresos en 3D, renders y empaque.</p>
-          <p lang="en">Self-initiated project: concept, sketches, visual identity, 3D modelling, 3D-printed prototypes, renders and packaging.</p>
-          <span class="badge"><span lang="es">Prototipo funcional</span><span lang="en">Working prototype</span></span>
+          <p lang="en">Self-initiated project: concept, sketches, visual identity, 3D modelling, 3D-printed prototypes, renders and packaging.</p><p lang="it">Progetto personale: concept, schizzi, identità visiva, modellazione 3D, prototipi stampati in 3D, render e packaging.</p>
+          <span class="badge"><span lang="es">Prototipo funcional</span><span lang="en">Working prototype</span><span lang="it">Prototipo funzionante</span></span>
         </div>
       </article>
     </div>
     <div class="pdfs">
       <a class="btn primary" href="portafolio.html" lang="es"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Ver portafolio completo</a>
       <a class="btn primary" href="portafolio.html#en" lang="en"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>View full portfolio</a>
+      <a class="btn primary" href="portafolio.html#it" lang="it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Vedi il portfolio completo</a>
     </div>
   </section>
 
   <button class="toggle" type="button" data-view="short">
-    <span lang="es">Versión corta</span><span lang="en">Short version</span>
+    <span lang="es">Versión corta</span><span lang="en">Short version</span><span lang="it">Versione breve</span>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 15l6-6 6 6"/></svg>
   </button>
   </div>
@@ -412,7 +414,7 @@ i.addEventListener('click',go);setTimeout(go,2600)})();</script>
   }
   var saved=null; try{saved=localStorage.getItem('auc-lang');}catch(e){}
   var lang='es';
-  if(location.hash==='#en'||location.hash==='#es') lang=location.hash.slice(1); else if(saved) lang=saved;
+  if(location.hash==='#en'||location.hash==='#es'||location.hash==='#it') lang=location.hash.slice(1); else if(saved) lang=saved;
   setLang(lang);
   setView(location.hash==='#perfil'?'full':'short');
   document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set);});});
